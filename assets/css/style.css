@@ -169,3 +169,13 @@ footer {
         padding: 0px;
     }
 }
+
+@media screen and (max-width: 512px){
+    .post-img {
+        width: 250px;
+    }
+
+    .update-info {
+        padding: 0px;
+    }
+}
