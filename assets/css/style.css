@@ -28,7 +28,7 @@ nav {
 
 main  {
     margin-top: 70px;
-    background-color: white;
+    background-color: rgb(233, 236, 238);
 }
 
 footer {
@@ -101,6 +101,13 @@ footer {
     padding: 50px;
 }
 
+.section-config {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+}
+
 .section-container {
     display: flex;
     color: black;
@@ -109,6 +116,10 @@ footer {
 
 .update-info {
     padding-left: 30px;
+}
+
+.post-img {
+    border-radius: 8px;
 }
 
 .title {
