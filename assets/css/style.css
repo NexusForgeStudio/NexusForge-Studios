@@ -172,10 +172,28 @@ footer {
 
 @media screen and (max-width: 512px){
     .post-img {
-        width: 250px;
+        width: 260px;
     }
 
     .update-info {
         padding: 0px;
+    }
+
+    .devs {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .post-img {
+        width: 200px;
+    }
+
+    .update-info {
+        padding: 0px;
+    }
+
+    .devs {
+        padding: 5px;
     }
 }
