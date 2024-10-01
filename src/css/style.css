@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Inter;
+  background-color: #ffffff;
+}
+body .top-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #4dafff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px;
+  align-items: center;
+}
+body .top-header .logo a {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 5px;
+}
+body .top-header .logo a img {
+  width: 70px;
+  height: 70px;
+}
+body .top-header .nav-link {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+body .top-header .nav-link a {
+  color: black;
+  text-decoration: none;
+  font-size: 22px;
+}
+body .top-header .nav-link a:hover {
+  text-decoration: underline;
+}
+body main {
+  margin-top: 100px;
+}
+body main .game-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 15px;
+  justify-content: center;
+}
+body main .game-content a {
+  background-color: #4dafff;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  width: 400px;
+  max-width: 400px;
+  min-width: 400px;
+  height: auto;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 0px 0px 15px 15px;
+}
+body main .game-content a .thumbnail img {
+  height: 100%;
+}
+body main .game-content a .description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}/*# sourceMappingURL=style.css.map */
