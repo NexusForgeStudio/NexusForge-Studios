@@ -6,53 +6,59 @@
 }
 
 body {
-  font-family: Inter;
-  background-color: #ffffff;
+  font-family: "Inter";
+  background-color: #01252e;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
-body .top-header {
+body > .top-header {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #4dafff;
+  background-color: #00586e;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   padding: 10px;
   align-items: center;
 }
-body .top-header .logo a {
+body > .top-header > .logo a {
   display: flex;
   flex-direction: row;
   gap: 10px;
   align-items: center;
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 25px;
   font-weight: 600;
   padding: 5px;
 }
-body .top-header .logo a img {
+body > .top-header > .logo a > img {
   width: 70px;
   height: 70px;
 }
-body .top-header .nav-link {
+body > .top-header > .logo a:hover {
+  text-decoration: underline;
+}
+body > .top-header > .nav-link {
   display: flex;
   flex-direction: row;
   gap: 25px;
 }
-body .top-header .nav-link a {
-  color: black;
+body > .top-header > .nav-link > a {
+  color: white;
   text-decoration: none;
   font-size: 22px;
 }
-body .top-header .nav-link a:hover {
+body > .top-header > .nav-link > a:hover {
   text-decoration: underline;
 }
-body main {
+body > main {
   margin-top: 100px;
 }
-body main .game-content {
+body > main > .game-content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -60,9 +66,9 @@ body main .game-content {
   padding: 15px;
   justify-content: center;
 }
-body main .game-content a {
-  background-color: #4dafff;
-  color: black;
+body > main > .game-content > a {
+  background-color: #00586e;
+  color: white;
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -72,14 +78,55 @@ body main .game-content a {
   height: auto;
   overflow: hidden;
   align-items: center;
-  border-radius: 0px 0px 15px 15px;
+  border-radius: 15px 15px 15px 15px;
 }
-body main .game-content a .thumbnail img {
+body > main > .game-content > a > .thumbnail > img {
   height: 100%;
 }
-body main .game-content a .description {
+body > main > .game-content > a > .description {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  text-align: justify;
+  gap: 8px;
   padding: 10px;
+}
+body > main > .game-content > a > .description > .game-title {
+  display: flex;
+  justify-content: center;
+}
+body > main > .game-content > a:hover {
+  background-color: #004353;
+  outline: auto;
+  outline-style: solid;
+  outline-width: 4px;
+  outline-offset: 0px;
+}
+body > main > .game-content > a:hover > .thumbnail > img {
+  opacity: 0.8;
+}
+body > main > .home-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+body > main > .home-content > .post {
+  background-color: #00586e;
+  color: white;
+  padding: 30px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  border-radius: 15px 15px 15px 15px;
+}
+body > main > .home-content > .post > .thumbnail > .thumb-img img {
+  width: 250px;
+}
+body > main > .home-content > .post > .description {
+  text-align: justify;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
 }/*# sourceMappingURL=style.css.map */
