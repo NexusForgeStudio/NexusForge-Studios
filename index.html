@@ -10,60 +10,85 @@
       href="src/img/Icons/favicon.ico"
       type="image/x-icon"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class="top-header">
-      <div class="logo">
-        <a href="index.html">
-          <img src="src/img/Icons/nexusforge icon.png" />
-          <p>NexusForge</p>
-        </a>
-      </div>
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">
+            <img src="src/img/Icons/nexusforge icon.png" />
+          </a>
+        </div>
 
-      <nav class="nav-link">
-        <a href="index.html">Início</a>
-        <a href="games.html">Jogos</a>
-      </nav>
+        <nav class="nav-link">
+          <ul>
+            <!-- home -->
+            <li><a class="header-link" href="index.html">Jogos</a></li>
+            <!-- devlog -->
+            <li>
+              <a
+                class="header-link"
+                href="https://www.reddit.com/r/NexusForgeDevLogs/"
+                target="_blank"
+                >Devlog</a
+              >
+            </li>
+            <hr class="h-separator" />
+            <!-- youtube -->
+            <li>
+              <a
+                class="social"
+                href="https://www.youtube.com/@NexusForgeBr"
+                target="_blank"
+                ><i class="bx bxl-youtube"></i
+              ></a>
+            </li>
+            <!-- twitter -->
+            <li>
+              <a
+                class="social"
+                href="https://x.com/NexusForgeBr"
+                target="_blank"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+            </li>
+            <!-- instagram -->
+            <li>
+              <a
+                class="social"
+                href="https://www.instagram.com/nexusforgebr/"
+                target="_blank"
+                ><i class="bx bxl-instagram-alt"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <div class="home-content">
-        <div class="post">
-          <div class="thumbnail">
-            <div class="thumb-img">
-              <img src="src/img/Icons/nexusforge icon.png" />
+      <div class="main-container">
+        <div class="games">
+          <!-- Riddle Quest  -->
+          <a class="game-links" href="riddle-quest.html">
+            <div class="game-title">
+              <h2>Riddle Quest</h2>
             </div>
-          </div>
-          <div class="description">
-            <p>
-              Sejam muito bem-vindos ao site oficial da NexusForge, aqui nós
-              postaremos atualizações de jogos etc...
-            </p>
-            <br />
-            <p>
-              NexusForge é uma empresa dedicada em desenvolvimento de jogos
-              eletrónicos.
-            </p>
-            <br />
-            <p>
-              Nós queremos copartilhar várias experiências divertidas e loucas
-              que criaremos ao <br />
-              longo do caminho.
-            </p>
-          </div>
-        </div>
-        <div class="post">
-          <div class="thumbnail">
-            <div class="thumb-img">
+            <div class="game-img">
               <img src="src/img/Games/RiddleQuest.png" />
             </div>
-          </div>
-          <div class="description">
-            <p>
-              Riddle Quest foi completamente refeito do zero, com novos
-              elementos e muita diversão.
-            </p>
-          </div>
+            <div class="game-info">
+              <p>
+                Riddle Quest é um jogo que foi desenvolvido em apenas 4 dias
+                para um evento escolar.
+              </p>
+              <h4>Categoria(s): Puzzle</h4>
+            </div>
+          </a>
         </div>
       </div>
     </main>

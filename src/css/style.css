@@ -1,132 +1,225 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
+  font-family: "Poppins";
 }
 
 body {
-  font-family: "Inter";
-  background-color: #01252e;
+  background-color: rgb(235, 235, 235);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  overflow: hidden;
+}
+body > header {
+  position: fixed;
+  width: 100%;
+  height: 110px;
+  top: 0;
+  left: 0;
+  background-color: rgb(9, 162, 233);
+}
+body > header .header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
+}
+body > header .header-content > .logo a {
+  display: flex;
+  align-items: center;
+}
+body > header .header-content > .logo a img {
+  width: 80px;
+  height: 80px;
+}
+body > header .header-content > .nav-link ul {
+  display: flex;
+  flex-direction: row;
+}
+body > header .header-content > .nav-link ul li {
+  list-style: none;
+}
+body > header .header-content > .nav-link ul li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+body > header .header-content > .nav-link ul li > a:hover {
+  background-color: white;
+  color: rgb(9, 162, 233);
+}
+body > header .header-content > .nav-link ul .header-link {
+  width: 80px;
+  height: 50px;
+}
+body > header .header-content > .nav-link ul .social {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+}
+body > header .header-content > .nav-link ul .h-separator {
+  width: 10px;
+  border: none;
+}
+
+main {
+  margin-top: 110px;
+  height: calc(100vh - 110px);
+  overflow-y: auto;
+}
+main > .main-container > .games {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 50px;
+}
+main > .main-container > .games > .game-links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: white;
+  padding: 15px;
+  width: 450px;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-decoration: none;
+}
+main > .main-container > .games > .game-links > .game-title h2 {
+  color: #09a2e9;
+  text-align: center;
+}
+main > .main-container > .games > .game-links > .game-img img {
+  width: 100%;
+  height: 100%;
+}
+main > .main-container > .games > .game-links > .game-info p {
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+}
+main > .main-container > .games > .game-links > .game-info h4 {
+  color: rgb(44, 44, 44);
+  font-weight: 550;
+}
+main > .main-container > .posts {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 50px;
+}
+main > .main-container > .posts > .post {
+  display: flex;
+  flex-direction: column;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
+  background-color: white;
+  padding: 15px;
+  width: 600px;
+  gap: 15px;
+  overflow: hidden;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
 }
-body > .top-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: #00586e;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 10px;
-  align-items: center;
-}
-body > .top-header > .logo a {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  color: white;
-  text-decoration: none;
-  font-size: 25px;
-  font-weight: 600;
-  padding: 5px;
-}
-body > .top-header > .logo a > img {
-  width: 70px;
-  height: 70px;
-}
-body > .top-header > .logo a:hover {
-  text-decoration: underline;
-}
-body > .top-header > .nav-link {
-  display: flex;
-  flex-direction: row;
-  gap: 25px;
-}
-body > .top-header > .nav-link > a {
-  color: white;
-  text-decoration: none;
-  font-size: 22px;
-}
-body > .top-header > .nav-link > a:hover {
-  text-decoration: underline;
-}
-body > main {
-  margin-top: 100px;
-}
-body > main > .game-content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding: 15px;
-  justify-content: center;
-}
-body > main > .game-content > a {
-  background-color: #00586e;
-  color: white;
+main > .main-container > .posts > .post > .post-title {
   display: flex;
   flex-direction: column;
-  text-decoration: none;
-  width: 400px;
-  max-width: 400px;
-  min-width: 400px;
-  height: auto;
-  overflow: hidden;
-  align-items: center;
-  border-radius: 15px 15px 15px 15px;
+  flex-wrap: wrap;
+  gap: 5px;
 }
-body > main > .game-content > a > .thumbnail > img {
+main > .main-container > .posts > .post > .post-title > .title {
+  color: rgb(9, 162, 233);
+}
+main > .main-container > .posts > .post > .post-title > .post-date {
+  color: rgb(161, 161, 161);
+  font-weight: 550;
+}
+main > .main-container > .posts > .post > .post-img > .post-img-src {
+  width: 100%;
   height: 100%;
 }
-body > main > .game-content > a > .description {
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-  gap: 8px;
-  padding: 10px;
-}
-body > main > .game-content > a > .description > .game-title {
-  display: flex;
-  justify-content: center;
-}
-body > main > .game-content > a:hover {
-  background-color: #004353;
-  outline: auto;
-  outline-style: solid;
-  outline-width: 4px;
-  outline-offset: 0px;
-}
-body > main > .game-content > a:hover > .thumbnail > img {
-  opacity: 0.8;
-}
-body > main > .home-content {
-  padding: 30px;
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 20px;
-}
-body > main > .home-content > .post {
-  background-color: #00586e;
-  color: white;
-  padding: 30px;
-  font-size: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-  border-radius: 15px 15px 15px 15px;
-}
-body > main > .home-content > .post > .thumbnail > .thumb-img img {
-  width: 250px;
-}
-body > main > .home-content > .post > .description {
-  text-align: justify;
+main > .main-container > .posts > .post > .post-info {
   -webkit-user-select: text;
      -moz-user-select: text;
           user-select: text;
+}
+main > .main-container > .posts > .post > .post-info > h4 {
+  color: rgb(9, 162, 233);
+}
+main > .main-container > .posts > .post > .post-info > ul > li {
+  list-style: inside;
+  color: rgb(46, 46, 46);
+}
+main > .main-container > .posts > .post > .post-links > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+main > .main-container > .posts > .post > .post-links > ul li {
+  list-style: none;
+}
+main > .main-container > .posts > .post > .post-links > ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #09a2e9;
+  padding: 0px 15px;
+  font-size: 18px;
+  text-decoration: none;
+}
+main > .main-container > .tools-posts {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 50px;
+}
+main > .main-container > .tools-posts > .tools-post {
+  display: flex;
+  flex-direction: column;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
+  background-color: white;
+  padding: 15px;
+  width: 600px;
+  gap: 15px;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main > .main-container > .tools-posts > .tools-post > .tools-info {
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
+}
+main > .main-container > .tools-posts > .tools-post > .tools-info > h4 {
+  color: rgb(9, 162, 233);
+}
+main > .main-container > .tools-posts > .tools-post > .tools-info > ul > li {
+  list-style: inside;
+  color: rgb(36, 36, 36);
+}
+main > .main-container > .tools-posts > .tools-post > .tools-info > ul > li a {
+  color: rgb(17, 17, 17);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }/*# sourceMappingURL=style.css.map */
