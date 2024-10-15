@@ -20,29 +20,30 @@ body > header {
   left: 0;
   background-color: rgb(9, 162, 233);
 }
-body > header .header-content {
+body > header .header-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   padding: 15px 100px;
 }
-body > header .header-content > .logo a {
+body > header .header-container > .logo a {
   display: flex;
   align-items: center;
 }
-body > header .header-content > .logo a img {
+body > header .header-container > .logo a img {
   width: 80px;
   height: 80px;
 }
-body > header .header-content > .nav-link ul {
+body > header .header-container > .nav-link ul {
   display: flex;
   flex-direction: row;
 }
-body > header .header-content > .nav-link ul li {
+body > header .header-container > .nav-link ul li {
   list-style: none;
 }
-body > header .header-content > .nav-link ul li > a {
+body > header .header-container > .nav-link ul li > a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,20 +51,20 @@ body > header .header-content > .nav-link ul li > a {
   text-decoration: none;
   font-size: 20px;
 }
-body > header .header-content > .nav-link ul li > a:hover {
+body > header .header-container > .nav-link ul li > a:hover {
   background-color: white;
   color: rgb(9, 162, 233);
 }
-body > header .header-content > .nav-link ul .header-link {
+body > header .header-container > .nav-link ul .header-link {
   width: 80px;
   height: 50px;
 }
-body > header .header-content > .nav-link ul .social {
+body > header .header-container > .nav-link ul .social {
   width: 50px;
   height: 50px;
   font-size: 30px;
 }
-body > header .header-content > .nav-link ul .h-separator {
+body > header .header-container > .nav-link ul .h-separator {
   width: 10px;
   border: none;
 }
@@ -222,4 +223,67 @@ main > .main-container > .tools-posts > .tools-post > .tools-info > ul > li a {
   font-weight: 500;
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+@media only screen and (max-width: 1024px) {
+  main {
+    margin-top: 150px;
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+  }
+  main > .main-container > .posts > .post {
+    width: 500px;
+  }
+  main > .main-container > .tools-posts > .tools-post {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  body > header {
+    height: auto;
+    padding: 0px;
+  }
+  body > header > .header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+  }
+  main {
+    margin-top: 150px;
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+  }
+  main > .main-container > .posts > .post {
+    width: 450px;
+  }
+  main > .main-container > .tools-posts > .tools-post {
+    width: 450px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body > header {
+    height: auto;
+    padding: 0px;
+  }
+  body > header > .header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+  }
+  main {
+    margin-top: 150px;
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+  }
+  main > .main-container > .posts > .post {
+    display: flex;
+    width: 350px;
+  }
+  main > .main-container > .tools-posts > .tools-post {
+    width: 350px;
+  }
 }/*# sourceMappingURL=style.css.map */
